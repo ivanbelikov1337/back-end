@@ -6,7 +6,7 @@ interface IPersonModel {
 }
 
 const app: Express = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 const HTTP_STATUSES = {
     OK_200: 200,
